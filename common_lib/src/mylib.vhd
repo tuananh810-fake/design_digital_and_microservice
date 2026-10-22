@@ -38,7 +38,7 @@ end component;
 component tri_state is
 port(
     c,a : in std_logic;
-    y : out std_logic;
+    y : out std_logic
 );
 end component;
 
