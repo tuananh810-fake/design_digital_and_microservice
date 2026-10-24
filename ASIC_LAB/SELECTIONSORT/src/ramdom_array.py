@@ -1,21 +1,22 @@
+import os
 import random
 
-# Tham số cấu hình
-N = 256             # Số phần tử của mảng (từ 0 đến N-1)
-DATA_WIDTH = 8     # Độ rộng 8-bit (giá trị từ 0-255)
+# Tham so cau hinh (Chon N = 8 de mo phong truc quan nhat)
+N = 8               # So phan tu mang
+DATA_WIDTH = 16     # Do rong 16-bit
 
-# Cách 1: Sinh mảng gồm chính xác các số từ 0 đến N-1 bị xáo trộn vị trí
-array = list(range(N))
-random.shuffle(array)
+# Mang so mau ngau nhien ro rang, khong trung lap de de quan sat
+array = [15, 3, 9, 1, 7, 12, 4, 6]
 
-# Cách 2 (Tùy chọn): Sinh mảng chứa các giá trị ngẫu nhiên bất kỳ
-# array = [random.randint(0, (1 << DATA_WIDTH) - 1) for _ in range(N)]
+# Duong dan luu file ram_init.mem
+script_dir = os.path.dirname(os.path.abspath(__file__))
+filepath = os.path.join(script_dir, "ram_init.mem")
 
-# Ghi ra file định dạng Hex (.mem) để SystemVerilog hoặc VHDL đọc
-filename = "ram_init.mem"
-with open(filename, "w") as f:
+# Ghi file Hex 4 ky tu (16-bit) cho ram.sv
+with open(filepath, "w", encoding="utf-8") as f:
     for val in array:
-        f.write(f"{val:02X}\n")
+        f.write(f"{val:04X}\n")
 
-print(f"Đã tạo file {filename} chứa {N} phần tử:")
-print(array)
+print("Generated successfully: ram_init.mem")
+print(f"Total elements: {N}")
+print("Initial Array:", array)
