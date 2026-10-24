@@ -21,9 +21,10 @@ entity selectionsort is
 end selectionsort
 
 architecture Behavioral of selectionsort is
-    
-
-
+component datapath is
+end component;
+component controller is
+end component;
 
 
 begin

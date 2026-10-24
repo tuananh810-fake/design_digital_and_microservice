@@ -36,10 +36,10 @@ j_src     <= i_add             when sel_j     =     '0' else j_add;
 min_src   <= i_reg             when sel_min   =     '0' else j_reg;
 ram_wdata <= ram_min_val       when sel_wdata =     '0' else ram_temp;
     -- mux3to1
-ram_addr <= i_reg   when sel_addr = '00' else
-         <= j_reg   when sel_addr = '01' else
-         <= min_reg when sel_addr = '10' else
-         (others=>'0');
+ram_addr <= i_reg   when sel_addr = "00" else
+            j_reg   when sel_addr = "01" else
+            min_reg when sel_addr = "10" else
+            (others=>'0');
     -- REGN
 
 REG_I : regn port map (
