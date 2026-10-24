@@ -86,6 +86,8 @@ begin
         start_i <= '0';
         wait for CLK_PERIOD * 5;
 
+        report "SELECTION SORT HOAN TAT! DUNG MO PHONG." severity note;
+        finish;
         wait;
     end process;
 
