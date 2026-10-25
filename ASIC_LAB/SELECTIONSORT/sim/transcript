@@ -1,0 +1,101 @@
+# vsim -c -do "run -all; quit -f" work.selectionsort_tb 
+# Start time: 00:37:55 on Oct 26,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.selectionsort_tb(behavioral)
+# Loading work.mylib
+# Loading work.selectionsort_top(behavioral)
+# Loading work.selectionsort(behavioral)
+# Loading work.datapath(behavioral)
+# Loading work.regn(rtl)
+# Loading work.controller(behavioral)
+# Loading sv_std.std
+# Loading work.ram
+# run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /selectionsort_tb/UUT/U_SELECTIONSORT/U1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /selectionsort_tb/UUT/U_SELECTIONSORT/U1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /selectionsort_tb/UUT/U_SELECTIONSORT/U1
+# 
+# ========================================================
+#    MANG BAN DAU TRONG RAM (TRUOC KHI SORT):
+# ========================================================
+#    RAM[0] = 15
+#    RAM[1] = 3
+#    RAM[2] = 9
+#    RAM[3] = 1
+#    RAM[4] = 7
+#    RAM[5] = 12
+#    RAM[6] = 4
+#    RAM[7] = 6
+# ========================================================
+# 
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /selectionsort_tb/UUT/U_SELECTIONSORT/U1
+# [SWAP @ 295 ns] >> Ghi de vao RAM[0] = 1
+# [SWAP @ 305 ns] >> Ghi de vao RAM[3] = 15
+# [SWAP @ 525 ns] >> Ghi de vao RAM[1] = 3
+# [SWAP @ 535 ns] >> Ghi de vao RAM[1] = 3
+# [SWAP @ 725 ns] >> Ghi de vao RAM[2] = 4
+# [SWAP @ 735 ns] >> Ghi de vao RAM[6] = 9
+# [SWAP @ 895 ns] >> Ghi de vao RAM[3] = 6
+# [SWAP @ 905 ns] >> Ghi de vao RAM[7] = 15
+# [SWAP @ 1035 ns] >> Ghi de vao RAM[4] = 7
+# [SWAP @ 1045 ns] >> Ghi de vao RAM[4] = 7
+# [SWAP @ 1145 ns] >> Ghi de vao RAM[5] = 9
+# [SWAP @ 1155 ns] >> Ghi de vao RAM[6] = 12
+# [SWAP @ 1225 ns] >> Ghi de vao RAM[6] = 12
+# [SWAP @ 1235 ns] >> Ghi de vao RAM[6] = 12
+# ** Note: ========================================================
+#    Time: 1235 ns  Iteration: 4  Instance: /selectionsort_tb
+# ** Note: SELECTION SORT HOAN TAT TAI: 1235000 ps (Thoi gian thuc thi: 1185000 ps)
+#    Time: 1235 ns  Iteration: 4  Instance: /selectionsort_tb
+# ** Note: ========================================================
+#    Time: 1235 ns  Iteration: 4  Instance: /selectionsort_tb
+# ** Note: BAT DAU DOC CAC GIA TRI HIEN TAI TRONG RAM DE KIEM TRA:
+#    Time: 1245 ns  Iteration: 1  Instance: /selectionsort_tb
+# ** Note:    RAM[0] = 1
+#    Time: 1256 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note:    RAM[1] = 3
+#    Time: 1266 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note:    RAM[2] = 4
+#    Time: 1276 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note:    RAM[3] = 6
+#    Time: 1286 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note:    RAM[4] = 7
+#    Time: 1296 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note:    RAM[5] = 9
+#    Time: 1306 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note:    RAM[6] = 12
+#    Time: 1316 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note:    RAM[7] = 15
+#    Time: 1326 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note: ========================================================
+#    Time: 1326 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note: KIEM TRA THANH CONG: MANG DA DUOC SAP XEP DUNG (TANG DAN)!
+#    Time: 1326 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note: ========================================================
+#    Time: 1326 ns  Iteration: 0  Instance: /selectionsort_tb
+# ** Note: KET THUC MO PHONG.
+#    Time: 1376 ns  Iteration: 0  Instance: /selectionsort_tb
+# 
+# ========================================================
+#    KET QUA MANG TRONG RAM SAU KHI SORT XONG:
+# ========================================================
+#    RAM[0] = 1
+#    RAM[1] = 3
+#    RAM[2] = 4
+#    RAM[3] = 6
+#    RAM[4] = 7
+#    RAM[5] = 9
+#    RAM[6] = 12
+#    RAM[7] = 15
+# ========================================================
+# 
+# End time: 00:37:56 on Oct 26,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 4
