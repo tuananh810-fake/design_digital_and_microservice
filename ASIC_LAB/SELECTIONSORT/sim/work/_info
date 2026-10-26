@@ -11,24 +11,24 @@ z2
 cModel Technology
 dC:/Blog/work_station/ModelSim_tutorial/modelsim_ase/win32aloem
 Econtroller
-Z0 w1792834492
+Z0 w1792951072
 Z1 DPx4 work 5 mylib 0 22 9BOoQW^h49KR=XdPRWUUn1
 Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 12
+!i122 28
 Z5 dX:/ASIC_LAB/SELECTIONSORT/sim
 Z6 8X:\ASIC_LAB\SELECTIONSORT\src\controller.vhd
 Z7 FX:\ASIC_LAB\SELECTIONSORT\src\controller.vhd
 l0
 L6 1
-VH;n[TYk70SPj5<5@`85BQ0
-!s100 c[9=d9^_LloQZkGLJ=?lR0
+V^nXieG[@5Q=C^[BZ[ZhP_1
+!s100 <z81`SZAgo4;KUBNolE`X2
 Z8 OV;C;2020.1;71
 33
-Z9 !s110 1792949868
+Z9 !s110 1792985267
 !i10b 1
-Z10 !s108 1792949868.000000
+Z10 !s108 1792985267.000000
 Z11 !s90 -2008|-work|work|X:\ASIC_LAB\SELECTIONSORT\src\controller.vhd|
 Z12 !s107 X:\ASIC_LAB\SELECTIONSORT\src\controller.vhd|
 !i113 1
@@ -39,8 +39,8 @@ R1
 R2
 R3
 R4
-DEx4 work 10 controller 0 22 H;n[TYk70SPj5<5@`85BQ0
-!i122 12
+DEx4 work 10 controller 0 22 ^nXieG[@5Q=C^[BZ[ZhP_1
+!i122 28
 l27
 L24 146
 VMDk_C3R?DS2^I^c:_VWI10
@@ -56,19 +56,19 @@ R12
 R13
 R14
 Edatapath
-Z15 w1792838619
+Z15 w1792951077
 R1
 R2
 R3
 R4
-!i122 11
+!i122 27
 R5
 Z16 8X:\ASIC_LAB\SELECTIONSORT\src\datapath.vhd
 Z17 FX:\ASIC_LAB\SELECTIONSORT\src\datapath.vhd
 l0
 L6 1
-V[:_5PeLRl=[47L1AAjLYV0
-!s100 N]emIAY66NEQl:C`0YE_I3
+VCzDTodlNYSR?iXPc;K0kL1
+!s100 [BTI0:Ikhj>UaTb:4Uh;X0
 R8
 33
 R9
@@ -84,8 +84,8 @@ R1
 R2
 R3
 R4
-DEx4 work 8 datapath 0 22 [:_5PeLRl=[47L1AAjLYV0
-!i122 11
+DEx4 work 8 datapath 0 22 CzDTodlNYSR?iXPc;K0kL1
+!i122 27
 l29
 L24 80
 V86[>hzI5nETjJBafa8IfS3
@@ -103,7 +103,7 @@ R14
 Pmylib
 R3
 R4
-!i122 9
+!i122 25
 w1792568816
 R5
 8X:\common_lib\src\mylib.vhd
@@ -114,9 +114,9 @@ V9BOoQW^h49KR=XdPRWUUn1
 !s100 hhiL]i:lQjg^S;485OcJM1
 R8
 33
-R9
+!s110 1792985266
 !i10b 1
-!s108 1792949867.000000
+Z20 !s108 1792985266.000000
 !s90 -2008|-work|work|X:\common_lib\src\mylib.vhd|
 !s107 X:\common_lib\src\mylib.vhd|
 !i113 1
@@ -126,17 +126,17 @@ vram
 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 R9
 !i10b 1
-!s100 Co`2?m0nG_6TBFHcU@;L=1
+!s100 LHTDl<UZ_i=ZAZ>G3eoSf1
 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I9KgP6FnCnR_GBamQLZoIR3
+Ik`kcaS;@:88g`8;KbTR=>3
 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R5
-w1792846206
+w1792951898
 8X:\ASIC_LAB\SELECTIONSORT\src\ram.sv
 FX:\ASIC_LAB\SELECTIONSORT\src\ram.sv
-!i122 14
-L0 1 49
+!i122 30
+L0 1 30
 OV;L;2020.1;71
 r1
 !s85 0
@@ -148,13 +148,13 @@ R10
 o-work work -sv
 tCvgOpt 0
 Eregn
-Z20 w1792305961
+Z21 w1792305961
 R3
 R4
-!i122 10
+!i122 26
 R5
-Z21 8X:\common_lib\src\regn.vhd
-Z22 FX:\common_lib\src\regn.vhd
+Z22 8X:\common_lib\src\regn.vhd
+Z23 FX:\common_lib\src\regn.vhd
 l0
 L4 1
 V;D?BBPOcC4@KFiEY[Jcgf0
@@ -163,9 +163,9 @@ R8
 33
 R9
 !i10b 1
-R10
-Z23 !s90 -2008|-work|work|X:\common_lib\src\regn.vhd|
-Z24 !s107 X:\common_lib\src\regn.vhd|
+R20
+Z24 !s90 -2008|-work|work|X:\common_lib\src\regn.vhd|
+Z25 !s107 X:\common_lib\src\regn.vhd|
 !i113 1
 R13
 R14
@@ -173,7 +173,7 @@ Artl
 R3
 R4
 DEx4 work 4 regn 0 22 ;D?BBPOcC4@KFiEY[Jcgf0
-!i122 10
+!i122 26
 l19
 L16 15
 VZ`M_Yz1JLU5gCZ[f]_5Dg3
@@ -182,33 +182,33 @@ R8
 33
 R9
 !i10b 1
-R10
-R23
+R20
 R24
+R25
 !i113 1
 R13
 R14
 Eselectionsort
-Z25 w1792837000
+Z26 w1792950976
 R1
 R2
 R3
 R4
-!i122 13
+!i122 29
 R5
-Z26 8X:\ASIC_LAB\SELECTIONSORT\src\selectionsort.vhd
-Z27 FX:\ASIC_LAB\SELECTIONSORT\src\selectionsort.vhd
+Z27 8X:\ASIC_LAB\SELECTIONSORT\src\selectionsort.vhd
+Z28 FX:\ASIC_LAB\SELECTIONSORT\src\selectionsort.vhd
 l0
 L6 1
-VY;gIX8f0NH[Kb`7a4d2HC0
-!s100 LBIQE5Qlj84M@G0[@e8AO0
+VeN1iOUXIeR@Uo^0J7bVM73
+!s100 JQNS90W35V`ef>IB93jP12
 R8
 33
 R9
 !i10b 1
 R10
-Z28 !s90 -2008|-work|work|X:\ASIC_LAB\SELECTIONSORT\src\selectionsort.vhd|
-Z29 !s107 X:\ASIC_LAB\SELECTIONSORT\src\selectionsort.vhd|
+Z29 !s90 -2008|-work|work|X:\ASIC_LAB\SELECTIONSORT\src\selectionsort.vhd|
+Z30 !s107 X:\ASIC_LAB\SELECTIONSORT\src\selectionsort.vhd|
 !i113 1
 R13
 R14
@@ -217,88 +217,88 @@ R1
 R2
 R3
 R4
-DEx4 work 13 selectionsort 0 22 Y;gIX8f0NH[Kb`7a4d2HC0
-!i122 13
+DEx4 work 13 selectionsort 0 22 eN1iOUXIeR@Uo^0J7bVM73
+!i122 29
 l67
 L23 101
-V6lUaz5EH7I^iMA_gXD;cY0
-!s100 b8`<ja0_06cIankWmj=<31
+VGEfWcSa251H5oL6z>oFMO3
+!s100 `XUczmMN@M3]l^RzOSQS42
 R8
 33
 R9
 !i10b 1
 R10
-R28
 R29
+R30
 !i113 1
 R13
 R14
 Eselectionsort_tb
-Z30 w1792949792
-Z31 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+Z31 w1792985249
+Z32 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
 R2
 R3
 R4
-!i122 16
+!i122 32
 R5
-Z32 8X:\ASIC_LAB\SELECTIONSORT\sim\selectionsort_tb.vhd
-Z33 FX:\ASIC_LAB\SELECTIONSORT\sim\selectionsort_tb.vhd
+Z33 8X:\ASIC_LAB\SELECTIONSORT\sim\selectionsort_tb.vhd
+Z34 FX:\ASIC_LAB\SELECTIONSORT\sim\selectionsort_tb.vhd
 l0
 L6 1
 VG@WdMSB:0S4HUYS8fUB0i3
 !s100 :^4aX7eDXzQTLW1B1T7Rg3
 R8
 33
-Z34 !s110 1792949869
+Z35 !s110 1792985268
 !i10b 1
-Z35 !s108 1792949869.000000
-Z36 !s90 -2008|-work|work|X:\ASIC_LAB\SELECTIONSORT\sim\selectionsort_tb.vhd|
-Z37 !s107 X:\ASIC_LAB\SELECTIONSORT\sim\selectionsort_tb.vhd|
+Z36 !s108 1792985268.000000
+Z37 !s90 -2008|-work|work|X:\ASIC_LAB\SELECTIONSORT\sim\selectionsort_tb.vhd|
+Z38 !s107 X:\ASIC_LAB\SELECTIONSORT\sim\selectionsort_tb.vhd|
 !i113 1
 R13
 R14
 Abehavioral
-R31
+R32
 R2
 R3
 R4
-Z38 DEx4 work 16 selectionsort_tb 0 22 G@WdMSB:0S4HUYS8fUB0i3
-!i122 16
+Z39 DEx4 work 16 selectionsort_tb 0 22 G@WdMSB:0S4HUYS8fUB0i3
+!i122 32
 l41
-Z39 L9 129
-Z40 VP>oLQ4YX3z9oKdG@d6fml2
-Z41 !s100 FW^SkWTSM7acPK411lQBh1
+L9 113
+VzH5D>Kzf5Vd`8iiW=Tzzd2
+!s100 jO0:d5K7[Ph`7gZ5ZWH^O0
 R8
 33
-R34
-!i10b 1
 R35
+!i10b 1
 R36
 R37
+R38
 !i113 1
 R13
 R14
 Eselectionsort_top
-Z42 w1792949760
+Z40 w1792985228
 R1
 R2
 R3
 R4
-!i122 15
+!i122 31
 R5
-Z43 8X:\ASIC_LAB\SELECTIONSORT\src\selectionsort_top.vhd
-Z44 FX:\ASIC_LAB\SELECTIONSORT\src\selectionsort_top.vhd
+Z41 8X:\ASIC_LAB\SELECTIONSORT\src\selectionsort_top.vhd
+Z42 FX:\ASIC_LAB\SELECTIONSORT\src\selectionsort_top.vhd
 l0
-L5 1
-V[GfRzC14e>a3Og;g7Nm5m3
-!s100 >6XGzCMMRn_OVNO?NC;C33
+L6 1
+Vk?ka;TD1QNJT@;NB]KKB>2
+!s100 HGNk62TTMC91meOMbB6Q90
 R8
 33
 R9
 !i10b 1
 R10
-Z45 !s90 -2008|-work|work|X:\ASIC_LAB\SELECTIONSORT\src\selectionsort_top.vhd|
-Z46 !s107 X:\ASIC_LAB\SELECTIONSORT\src\selectionsort_top.vhd|
+Z43 !s90 -2008|-work|work|X:\ASIC_LAB\SELECTIONSORT\src\selectionsort_top.vhd|
+Z44 !s107 X:\ASIC_LAB\SELECTIONSORT\src\selectionsort_top.vhd|
 !i113 1
 R13
 R14
@@ -307,19 +307,19 @@ R1
 R2
 R3
 R4
-DEx4 work 17 selectionsort_top 0 22 [GfRzC14e>a3Og;g7Nm5m3
-!i122 15
-l65
-L20 99
-VSN18aiPQB_lEzW=U:>Q7g2
-!s100 JiVNLm`NBcWNDb?BBP<LC2
+DEx4 work 17 selectionsort_top 0 22 k?ka;TD1QNJT@;NB]KKB>2
+!i122 31
+l64
+L21 84
+VQGAzoE1RM`VeQ8jz]K50]1
+!s100 >9zRdMS9dQ`XMLS4f_9;E3
 R8
 33
 R9
 !i10b 1
 R10
-R45
-R46
+R43
+R44
 !i113 1
 R13
 R14

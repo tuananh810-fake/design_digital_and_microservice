@@ -2,11 +2,12 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.mylib.all;
+
 entity selectionsort_top is
     generic (
-        N          : integer := 256;
-        DATA_WIDTH : integer := 16;
-        ADDR_WIDTH : integer := 8
+        N          : integer := 64;
+        DATA_WIDTH : integer := 7;
+        ADDR_WIDTH : integer := 6
     );
     port(
         clk       : in  STD_LOGIC;
@@ -21,9 +22,9 @@ architecture Behavioral of selectionsort_top is
 
     component selectionsort is
         generic (
-            N          : integer := 256;
-            DATA_WIDTH : integer := 16;
-            ADDR_WIDTH : integer := 8
+            N          : integer := 64;
+            DATA_WIDTH : integer := 7;
+            ADDR_WIDTH : integer := 6
         );
         port(
             clk       : in  STD_LOGIC;
@@ -39,8 +40,8 @@ architecture Behavioral of selectionsort_top is
 
     component ram is
         generic (
-            DATA_WIDTH : integer := 16;
-            ADDR_WIDTH : integer := 8
+            DATA_WIDTH : integer := 7;
+            ADDR_WIDTH : integer := 6
         );
         port(
             clk   : in  STD_LOGIC;
@@ -60,28 +61,11 @@ architecture Behavioral of selectionsort_top is
     signal ram_addr       : STD_LOGIC_VECTOR(ADDR_WIDTH-1 DOWNTO 0);
     signal ram_wdata      : STD_LOGIC_VECTOR(DATA_WIDTH-1 DOWNTO 0);
     signal ram_rdata      : STD_LOGIC_VECTOR(DATA_WIDTH-1 DOWNTO 0);
-
-    signal sort_completed : STD_LOGIC := '0';
 begin
-
-    -- Ghi nhận trạng thái hoàn thành sắp xếp để giữ quyền đọc cho ext_addr kể cả khi start_i về '0'
-    process(clk, rst)
-    begin
-        if rst = '1' then
-            sort_completed <= '0';
-        elsif rising_edge(clk) then
-            if sort_done = '1' then
-                sort_completed <= '1';
-            elsif start_i = '1' and sort_done = '0' then
-                sort_completed <= '0';
-            end if;
-        end if;
-    end process;
-
-    -- Multiplex RAM: khi đã sort xong thì đọc từ ext_addr bên ngoài, khi đang sort thì kết nối với selectionsort
-    ram_addr  <= ext_addr   when (sort_done = '1' or sort_completed = '1') else sort_addr;
-    ram_we    <= '0'        when (sort_done = '1' or sort_completed = '1') else sort_we;
-    ram_wdata <= sort_wdata;
+    
+    ram_addr  <= ext_addr when sort_done = '1' else sort_addr;
+    ram_we    <= '0'      when sort_done = '1' else sort_we;
+    ram_wdata <= sort_wdata; 
 
     rdata_out <= ram_rdata;
     done_o    <= sort_done;
@@ -115,4 +99,5 @@ begin
             wdata => ram_wdata,
             rdata => ram_rdata
         );
+
 end Behavioral;

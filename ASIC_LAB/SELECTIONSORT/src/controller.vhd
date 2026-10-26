@@ -5,9 +5,9 @@ use work.mylib.all;
 
 entity controller is
     generic (
-        N          : integer := 256;
-        DATA_WIDTH : integer := 16;
-        ADDR_WIDTH : integer := 8
+        N          : integer := 64;
+        DATA_WIDTH : integer := 7;
+        ADDR_WIDTH : integer := 6
     );
     port(
         clk, rst                            : in  STD_LOGIC;

@@ -8,9 +8,9 @@ end selectionsort_tb;
 
 architecture Behavioral of selectionsort_tb is
 
-    constant N          : integer := 8;
-    constant DATA_WIDTH : integer := 16;
-    constant ADDR_WIDTH : integer := 8;
+    constant N          : integer := 64;
+    constant DATA_WIDTH : integer := 7;
+    constant ADDR_WIDTH : integer := 6;
     constant CLK_PERIOD : time    := 10 ns;
 
 
@@ -24,9 +24,9 @@ architecture Behavioral of selectionsort_tb is
 
     component selectionsort_top is
         generic (
-            N          : integer := 256;
-            DATA_WIDTH : integer := 16;
-            ADDR_WIDTH : integer := 8
+            N          : integer := 64;
+            DATA_WIDTH : integer := 7;
+            ADDR_WIDTH : integer := 6
         );
         port(
             clk       : in  std_logic;
@@ -91,9 +91,6 @@ begin
         wait until done_o = '1';
         end_time := now;
 
-        wait until rising_edge(clk);
-        start_i <= '0';
-
         for k in 0 to N-1 loop
             ext_addr <= std_logic_vector(to_unsigned(k, ADDR_WIDTH));
             wait until rising_edge(clk);
@@ -101,6 +98,9 @@ begin
             read_arr(k) := to_integer(unsigned(rdata_out));
             report "   RAM[" & integer'image(k) & "] = " & integer'image(read_arr(k)) severity note;
         end loop;
+        -- start_i = 0 kết thúc trạng thái về S0   
+        wait until rising_edge(clk);
+        start_i <= '0';
 
         -- Kiem tra xem mang da duoc sap xep tang dan chua
         is_sorted := true;
@@ -110,10 +110,8 @@ begin
             end if;
         end loop;
 
-
         wait for CLK_PERIOD * 5;
         finish;
         wait;
     end process;
-
 end Behavioral;

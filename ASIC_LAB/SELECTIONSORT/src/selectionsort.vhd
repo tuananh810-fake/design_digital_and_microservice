@@ -5,9 +5,9 @@ use work.mylib.all;
 
 entity selectionsort is
     generic (
-        N          : integer := 256;
-        DATA_WIDTH : integer := 16;
-        ADDR_WIDTH : integer := 8
+        N          : integer := 64;
+        DATA_WIDTH : integer := 7;
+        ADDR_WIDTH : integer := 6
     );
     port(
         clk, rst    : in  STD_LOGIC;
@@ -24,9 +24,9 @@ architecture Behavioral of selectionsort is
 
     component datapath is
         generic (
-            N          : integer := 256;
-            DATA_WIDTH : integer := 16;
-            ADDR_WIDTH : integer := 8
+            N          : integer := 64;
+            DATA_WIDTH : integer := 7;
+            ADDR_WIDTH : integer := 6
         );
         port(
             clk, rst                            : in  STD_LOGIC;
@@ -42,9 +42,9 @@ architecture Behavioral of selectionsort is
 
     component controller is
         generic (
-            N          : integer := 256;
-            DATA_WIDTH : integer := 16;
-            ADDR_WIDTH : integer := 8
+            N          : integer := 64;
+            DATA_WIDTH : integer := 7;
+            ADDR_WIDTH : integer := 6
         );
         port(
             clk, rst                            : in  STD_LOGIC;
